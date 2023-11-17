@@ -1,0 +1,77 @@
+body {
+    background: #fafafa;
+    color: #333333;
+    padding-top: 80px; /* Adjust top padding to fit the navbar */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+  
+  .article-title {
+    color: #000000; /* Change color to black */
+  }
+  /* NBA Themed Navbar */
+  .navbar {
+    background-color: #1d428a; /* NBA blue color */
+    height: 80px; /* Set a fixed height for your navbar */
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between; /* Ensures spacing around items */
+    height: 100%;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  /* NBA logo styles */
+  .nba-logo {
+    height: 50px; /* Height of the NBA logo */
+    margin-right: 10px;
+  }
+  
+  /* Navbar link styles */
+  .nav-link {
+    color: #ffffff; /* White text color for contrast */
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link.active {
+    color: #C8102E; /* NBA red color for hover and active state */
+  }
+  
+  /* Adjust the navbar-toggler for the dark background */
+  .navbar-toggler {
+    border-color: #fff;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Content Section Styles */
+  .content-section {
+    background: #ffffff;
+    padding: 15px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Article Image Styles */
+  .article-img {
+    height: auto; /* Maintain the aspect ratio */
+    width: auto; /* Maintain the aspect ratio */
+    max-width: 100px; /* Maximum width */
+    max-height: 100px; /* Maximum height */
+    object-fit: cover; /* Cover the area without stretching */
+  }
+  
+  

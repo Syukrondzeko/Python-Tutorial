@@ -16,13 +16,13 @@ posts = [
      'title': 'How to do step back',
      'content': 'First post content',
      'date_posted': 'November 16, 2023',
-     'img_url': 'image/harden.jpg'
+     'img_url': 'image/avatar.svg'
      },
     {'author': 'Kevin Durant',
      'title': 'How to get MVP awards',
      'content': 'Second post content',
      'date_posted': 'November 17, 2023',
-     'img_url': 'image/durant.jpg'
+     'img_url': 'image/avatar.svg'
      },
 ]
 

@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+pandas
+scikit-learn

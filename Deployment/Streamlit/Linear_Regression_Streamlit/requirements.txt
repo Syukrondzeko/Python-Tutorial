@@ -1,5 +1,3 @@
-Flask
-gunicorn
-numpy
+streamlit
 pandas
 scikit-learn

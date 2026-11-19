@@ -5,9 +5,13 @@ from sklearn.metrics import mean_absolute_percentage_error
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 import pickle
+from pathlib import Path
+
+# Resolve files relative to this script so it works from any directory
+HERE = Path(__file__).resolve().parent
 
 # Load the dataset
-df = pd.read_csv("healthcare_dataset.csv")
+df = pd.read_csv(HERE / "healthcare_dataset.csv")
 
 # Separate independent (features) and dependent (target) variables
 X = df[['Age', 'Gender', 'Blood Type', 'Medical Condition']]
@@ -37,8 +41,8 @@ mape = mean_absolute_percentage_error(y_test, y_pred)
 print(f"MAPE: {mape * 100:.2f}%")
 
 # Save the model and transformer to pickle files for later use
-with open('linear_regression_model.pkl', 'wb') as file:
+with open(HERE / 'linear_regression_model.pkl', 'wb') as file:
     pickle.dump(regressor, file)
 
-with open('transformer.pkl', 'wb') as file:
+with open(HERE / 'transformer.pkl', 'wb') as file:
     pickle.dump(transformer, file)
